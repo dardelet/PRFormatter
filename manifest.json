@@ -17,7 +17,11 @@
         {
             "matches": ["https://github.com/*/*/compare/feature/*?expand=1"],
             "css": ["mystyle.css"],
-            "js": ["jquery-3.0.0.min.js","myscript.js"]
+            "js": [
+                "lib/jquery-1.7.1.min.js",
+                "lib/client.js",
+                "myscript.js"
+            ]
         }
     ]
 }

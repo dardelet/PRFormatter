@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "PRFormatter",
+    "description": "This extension connects to the Trello API to fill the details of your ticket",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*/*/compare/feature/*?expand=1"],
+            "css": ["mystyle.css"],
+            "js": ["jquery-3.0.0.min.js","myscript.js"]
+        }
+    ]
+}

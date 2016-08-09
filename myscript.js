@@ -1,6 +1,5 @@
 var featureTag = $('i:contains("compare")').next()
-var cardId = featureTag.html();
-alert(cardId);
+var cardId = parseInt(featureTag.html().match(/\d+/));
 
 function formatPrWithCard(card) {
   var strippedCardTitle = card['name']
@@ -28,7 +27,7 @@ Trello.authorize({
       response.sort(function(a, b) { return new Date(b[key]) - new Date(a[key]); });
       Trello.get('/boards/' + response[0]['id'] + '/lists', function (response) {
         for(var i = 0 ; i < response.length ; i++)
-          if (response[i]['name'] === 'Done Sprint #21')
+          if (response[i]['name'] === 'Doing')
             break;
         Trello.get('/lists/' + response[i]['id'] + '/cards', function (response) {
           for(var i = 0 ; i < response.length ; i++)

@@ -26,9 +26,8 @@ Trello.authorize({
                 .replace(/\s?\[\d+\]\s?/, '');
               var prTitle = '[' + card['idShort'] + '] ' + strippedCardTitle;
               $('#pull_request_title').val(prTitle);
-              var prTemplate = $('#pull_request_body').val()
-                .replace(/## COPIER\/COLLER la description de la User Story ici !/, '')
-              $('#pull_request_body').html(card['desc'] + prTemplate);
+              var prTemplate = $('#pull_request_body').val();
+              $('#pull_request_body').html(card['desc'] + '\n_______\n' + prTemplate);
             }
           }
         });

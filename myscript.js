@@ -9,7 +9,7 @@ function formatPrWithCard(card) {
   $('#pull_request_title').val(prTitle);
 
   var prTemplate = $('#pull_request_body').val()
-    .replace(/## COPIER\/COLLER la description de la User Story ici !\n/, '')
+    .replace(/## COPIER\/COLLER la description de la User Story ici !/, '')
   $('#pull_request_body').html(card['desc'] + prTemplate);
 }
 

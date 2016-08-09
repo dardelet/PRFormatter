@@ -16,7 +16,6 @@
     "content_scripts": [
         {
             "matches": ["*://github.com/*/compare/*?expand=1"],
-            "css": ["mystyle.css"],
             "js": [
                 "lib/jquery-1.7.1.min.js",
                 "lib/client.js",

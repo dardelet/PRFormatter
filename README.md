@@ -8,7 +8,7 @@ It will add the title and the description of the ticket to your PR
 
 ## Installation
 
-Download the .zip et extract it
-Go to chrome://extensions
-Enable developer mode
-Load unpacked Extension
+- Download the .zip and extract it
+- Go to chrome://extensions
+- Enable developer mode
+- Load unpacked Extension
